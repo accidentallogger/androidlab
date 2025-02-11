@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">androidlab</string>
+    <string name="title_activity_lab4">lab4</string>
+    <string name="title_activity_calci">calci</string>
+    <string name="title_activity_lab4incri">lab4-increment</string>
+    <string name="title_activity_lab4decri">lab4-decrement</string>
 </resources>

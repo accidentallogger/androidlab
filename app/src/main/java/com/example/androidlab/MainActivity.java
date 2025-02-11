@@ -1,5 +1,6 @@
 package com.example.androidlab;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
@@ -27,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, com.example.androidlab.Activity2.class);
+                startActivity(intent);
                 if (!editText.getText().toString().isEmpty()) {
 
                     button.setText(editText.getText().toString());
