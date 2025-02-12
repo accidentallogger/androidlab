@@ -29,4 +29,12 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="214dp"
         android:text="Click this." />
+    <Button
+        android:id="@+id/calcibutt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="130dp"
+        android:text="open Calci." />
+
 </RelativeLayout>

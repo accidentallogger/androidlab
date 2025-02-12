@@ -14,7 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class MainActivity extends AppCompatActivity {
     private MediaPlayer mediaPlayer;
     private ImageView backgroundImage;
-
+private Button calc;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         Button button = findViewById(R.id.butt);
         backgroundImage = findViewById(R.id.backgroundImage);
         mediaPlayer = MediaPlayer.create(this, R.raw.yoo_1);
-
+calc=findViewById(R.id.calcibutt);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -47,6 +47,14 @@ public class MainActivity extends AppCompatActivity {
 
                     Toast.makeText(MainActivity.this, "Empty text box", Toast.LENGTH_SHORT).show();
                 }
+            }
+        });
+
+        calc.setOnClickListener(new View.OnClickListener(){
+            @Override
+           public void onClick(View v){
+                Intent intent = new Intent(MainActivity.this, com.example.androidlab.calci.class);
+                startActivity(intent);
             }
         });
     }
